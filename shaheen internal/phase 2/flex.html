@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flexbox</title>
+
+<style>
+
+body {
+    background-color:#f0c9db ;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    background: rgb(132, 197, 219);
+    border: 2px solid black;
+}
+p {
+    width: 100px;
+    height: 50px;
+    background: rgb(101, 9, 70);
+    text-align: center;
+    line-height: 50px;
+    border: 3px solid black;
+    color: #fff;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    margin-top: 20px;
+    background: rgb(174, 119, 193);
+    border: 2px solid black;
+}
+
+</style>
+
+</head>
+<body>
+
+<h2>ROW - Movies</h2>
+
+<section>
+    <p>Action</p>
+    <p>Comedy</p>
+    <p>Drama</p>
+</section>
+
+<h2>COLUMN - Types</h2>
+
+<article>
+    <p>Horror</p>
+    <p>Romance</p>
+    <p>Thriller</p>
+</article>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Food Menu</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: lightcoral;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+h2 {
+    margin-top: 60px;
+    text-align: center;
+    color:#23475e
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+section {
+    position: relative;
+    width: 250px;
+    border: 3px solid black;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+img {
+    width: 100%;
+}
+h4 {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgb(3, 74, 90);
+    padding: 3px;
+    color:#fff;
+}
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 90%;
+    }
+}
+@media (max-width: 900px) {
+    main {
+        justify-content: center;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>FOOD MENU</header>
+
+<h2>Popular Foods</h2>
+
+<main>
+<section>
+    <h4>Hot</h4>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Supreme_pizza.jpg">
+    <h3>Pizza</h3>
+    <p>Cheesy and tasty</p>
+</section>
+
+<section>
+    <h4>Best</h4>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Cheeseburger.jpg">
+    <h3>Burger</h3>
+    <p>Juicy and delicious</p>
+</section>
+
+<section>
+    <h4>Crispy</h4>
+    <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5">
+    <h3>Fries</h3>
+    <p>Crunchy snack</p>
+</section>
+
+</main>
+
+</body>
+</html>

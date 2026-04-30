@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORM</title>
+    </head>
+<body>
+
+<form id="myForm">
+    <input type="text" id="username" placeholder="Enter name">
+    <button type="submit">Submit</button>
+</form>
+
+<p id="message"></p>
+
+<script>
+var form = document.getElementById("myForm");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    var name = document.getElementById("username").value;
+
+    if (name === "") {
+        document.getElementById("message").innerText = "Name is required!";
+    } else {
+        document.getElementById("message").innerText = "Form submitted!";
+    }
+});
+</script>
+
+</body>
+</html>

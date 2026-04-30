@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add/Remove</title>
+</head>
+
+<body>
+
+<input type="button" value="Add element" onclick="Add()">
+<input type="button" value="Remove element" onclick="removeElement()">
+
+<script>
+    var heading = document.createElement("h1");
+
+    function Add(){
+        heading.innerHTML = "PATRIOT";
+        document.body.appendChild(heading);
+    }
+
+    function removeElement(){
+        heading.remove();
+    }
+</script>
+
+</body>
+</html>
